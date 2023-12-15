@@ -1,3 +1,4 @@
+# Лексический анализатор
 class Token:
     def __init__(self, token_type, lexeme):
         self.token_type = token_type
