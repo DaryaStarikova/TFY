@@ -1,20 +1,38 @@
 program var
+
 {Объявляем переменные}
 int1, int2, int3: int;
 float1, float2, float3: float;
 bool1,bool2, bool3: bool;
 
 begin
+{оператор присваивания}
+int1 as 22
+;
+{Условный оператор}
+if int1 LT 50
+    then int1 as 50
+else
+    int1 as 100
+;
+{Условный оператор без else}
+if int1 EQ 50
+    then int1 as 100
+;
+{Оператор ввода}
+read(int2, int3)
+;
+{Оператор вывода}
+write(int2, int3 plus 4 mult 10 GT 20)
+;
 {Оператор фиксированного цикла}
 for float1 as 22.34 to float1 LT 50
 do
     [float1 as float1 plus 10.3 : write(1, float1) : float1 as float1 plus 2.0] {составной оператор}
 ;
-float2 as 1.1
-;
 {Оператор условного цикла}
-whale float2 LE 100
+while float2 LE 100
 do
-[float2 as float2 mult 1.3 : bool1 as float2 GT 4 : if bool1 then write(1) else write(0)]
+    [float2 as float2 mult 1.3 : bool1 as float2 GT 4 : if bool1 then write(1) else write(0)]
 
 end@
